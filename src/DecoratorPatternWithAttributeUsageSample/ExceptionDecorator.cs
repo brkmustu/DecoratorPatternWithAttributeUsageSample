@@ -14,11 +14,11 @@ namespace DecoratorPatternWithAttributeUsageSample
             try
             {
                 _decoratee.Handle(command);
-                Console.WriteLine("ExceptionDecorator'dan selamlar...");
             }
             catch (Exception ex)
             {
                 // exception handling (logging...)
+                Console.WriteLine("ExceptionDecorator'dan selamlar...");
                 throw;
             }
         }
