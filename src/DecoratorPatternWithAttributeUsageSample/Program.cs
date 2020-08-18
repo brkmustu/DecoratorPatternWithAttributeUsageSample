@@ -14,6 +14,8 @@ namespace DecoratorPatternWithAttributeUsageSample
                 var fooCommand = container.Resolve<ICommandHandler<FooCommand>>();
                 fooCommand.Handle(new FooCommand { Name = "Test Foo", Code = 111 });
             }
+            
+            Console.Read();
         }
     }
 }
